@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll Numbers</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tab">
+      <button class="tablinks" onclick="fetchRollNumbers(event, 'assignments')">
+        Assignments
+      </button>
+      <button class="tablinks" onclick="fetchRollNumbers(event, 'labs')">
+        Labs
+      </button>
+      <button class="tablinks" onclick="fetchRollNumbers(event, 'labGroups')">
+        Lab Groups
+      </button>
+    </div>
+    <div class="container">
+      <h1>Loading...</h1>
+      <div id="rollsGrid" class="rolls-grid"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
